@@ -1,0 +1,133 @@
+.navbar-dark{
+    background: linear-gradient(
+        to bottom,
+        #262626,
+        #0b0b0b
+    );
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#header #hh{
+    padding-left: 5%;
+    padding-right: 5%; 
+    padding-top: 30px;
+}
+.notas{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: -150px;
+    padding-top: 150px;
+}
+body {
+    background-image: url("https://previews.123rf.com/images/eugenesergeev/eugenesergeev1602/eugenesergeev160200291/53139936-muro-de-hormig%C3%B3n-gris-con-patr%C3%B3n-de-estuco-decorativo-fondo-textura-de-la-foto.jpg");
+    background-size: 20%;
+    padding-bottom: 5%;
+}
+#header #line-ry{
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 40%);
+    background: linear-gradient(
+        to left,
+        #E40000,
+        #F0B016
+    );
+}
+#rotar {
+    transform: rotate(-2deg);
+}
+#lista1 li {
+    list-style: none ;
+}
+#lista1 a {
+    color:white;
+    text-decoration:none;
+}
+#lista1 li.active {
+    background-color: black;
+}
+#lista1 li:hover {
+    background-color:black;
+}
+#notas {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px !important;
+}
+
+#notas #nt1{
+    background-color: #B20000;
+}
+#notas h1{
+    margin: 0%;
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .navbar-brand{
+        width: 50%;
+    }
+    .navbar-brand img {
+        width: 200px;
+    }
+    #notas {
+        width: 95%;
+        margin: auto;
+        margin-top: 60px !important;
+    }
+    #lista1 li {
+        padding: 10px !important;
+    }
+    #header  {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+        background: linear-gradient(
+            to left,
+            #E40000,
+            #780000
+        );
+    }
+    #notas img {
+        width: 100%;
+        height: 100%;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    #header  {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 79%, 0% 100%);
+        background: linear-gradient(
+            to left,
+            #E40000,
+            #780000
+        );
+    }
+    #notas img {
+        width: 350px;
+        height: 100%;
+    }   
+    #notas #nt1 img{
+        height: 320px !important;
+        margin-top: -35px !important;
+        position: absolute;
+        z-index: 10 !important;
+        -webkit-box-shadow: 0px 0px 60px 5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 0px 60px 5px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 60px 5px rgba(0,0,0,0.75);
+    }
+    #notas #nt1 h1 {
+        margin-left: 350px;
+    }
+    #notas #nt1,#nt2{
+        height: 300px !important;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #lista1 {
+        margin-top: 90px;
+        font-size: 2em;
+    }
+    #lista1 li {
+        display:inline;
+        padding-left:3px;
+        padding-right:3px;
+   }
+   #notas #contentNotes{
+        margin-left: 20px;
+    }
+}
